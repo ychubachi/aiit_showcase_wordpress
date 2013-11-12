@@ -91,3 +91,6 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+/** Set up 'direct' method for wordpress, auto update without FTP */
+define('FS_METHOD', 'direct');
