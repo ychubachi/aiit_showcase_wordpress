@@ -46,10 +46,10 @@
 <h1><img src="/images/common/side_h01.png" width="95" height="19" alt="Facebook">
 </h1>
 <div class="box">
-<div class="fb-like-box" data-href="https://www.facebook.com/kanri.pac" data-width="228" data-height="350" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false"></div>
+<div class="fb-like-box" data-href="https://www.facebook.com/aiit.ac.jp" data-width="254" data-height="380" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false"></div>
 </div>
 </section>
 <ul id="side-info">
-<li><a href="<?php echo home_url( 'info' ); ?>"><img src="/images/common/side_bn01.jpg" width="258" height="236" class="btn" alt="大学からのご案内／資料請求、入試説明会の情報はこちら"></a></li>
+<li><a href="<?php echo home_url( 'info' ); ?>"><img src="/images/common/side_bn01.jpg" width="258" height="220" class="btn" alt="大学からのご案内／資料請求、入試説明会の情報はこちら"></a></li>
 </ul>
 <!-- /two-maincolumn-side --></div>
