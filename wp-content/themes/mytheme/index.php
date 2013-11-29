@@ -50,11 +50,24 @@
 <section id="index-channel" class="boxb">
 <div class="titlecolumn">
 <h1><a href="<?php echo home_url( 'channel' ); ?>"><img src="/images/index/index_h03.png" width="220" height="47" alt="CHANNEL"></a></h1>
-<p>&nbsp;</p>
+<p>AIITのリアルを知る。<br>
+動画で観る学びの現場。</p>
 </div>
 <div class="box">
 <h2>最近追加された記事</h2>
-<p class="comingsoon">COMING SOON</p>
+<ul class="heightLineParent">
+<li>
+<h3><a href="http://youtu.be/tmBZg9_IFNA" target="_blank">入試説明会（2012.12月実施）</a></h3>
+<div class="multicolumn w276 mt5">
+<div class="multicolumn-left w120"> <a href="http://youtu.be/tmBZg9_IFNA" target="_blank"><img src="/images/index/index_ph01.jpg" width="120" height="67" alt=""></a></div>
+<div class="multicolumn-right w146">
+<p>公開日：<br>
+2013/01/21<br>
+<a href="http://youtu.be/tmBZg9_IFNA" target="_blank">動画を見る</a></p>
+</div>
+</div>
+</li>
+</ul>
 </div>
 </section>
 </article>
