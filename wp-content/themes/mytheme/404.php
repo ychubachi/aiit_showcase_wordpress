@@ -35,7 +35,6 @@
 						<TABLE WIDTH="100%" BORDER="0">
 							<TR>
 								<TD>
-									<IMG SRC="/libImage/warning.gif" WIDTH="40" HEIGHT="40" ALIGN="middle">
 									</TD>
 									<TD>
 										<FONT SIZE="2">

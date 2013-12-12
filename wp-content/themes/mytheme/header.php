@@ -11,8 +11,14 @@
 <title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="stylesheet" href="/css/import.css">
+<?php if ( is_home() || is_front_page() ) : ?>
+<link rel="stylesheet" href="/js/bxslider/jquery.bxslider.css">
+<?php endif; ?>
 <script src="/js/jquery.js"></script>
 <script src="/js/common.js"></script>
+<?php if ( is_home() || is_front_page() ) : ?>
+<script src="/js/bxslider/jquery.bxslider.min.js"></script>
+<?php endif; ?>
 <!-- BEGIN: WP Social Bookmarking Light -->
 <meta name="mixi-check-robots" content="noimage" />
 <script type="text/javascript" src="http://connect.facebook.net/ja_JP/all.js#xfbml=1"></script>
@@ -41,8 +47,13 @@
 <p>産業技術大学院大学 [AIIT] の活動・実績をアーカイブし、発信する [AIITショーケース]</p>
 <h1><img src="/images/common/header_logo01.png" alt="AIITショーケース[産業技術大学院大学]" width="899" height="56" border="0" usemap="#Map"></h1>
 <map name="Map">
-<area shape="rect" coords="0,0,455,56" href="<?php echo home_url(); ?>">
+<area shape="rect" coords="0,0,455,56" href="<?php echo home_url(); ?>" alt="AIIT SHOWCASE">
+<area shape="rect" coords="640,16,898,56" href="http://aiit.ac.jp/" target="_blank" alt="産業技術大学院大学">
 </map>
+<ul id="hnavi">
+<li><a href="http://aiit.ac.jp/admission/" target="_blank">入試案内</a></li>
+<li><a href="https://aiit.ac.jp/form/document/add" target="_blank">資料請求</a></li>
+</ul>
 <nav id="gnavi">
 <ul>
 <?php if ( is_front_page() ) : ?>
@@ -51,9 +62,9 @@
 <li><a href="<?php echo home_url(); ?>"><img src="/images/common/header_nv01.png" width="80" height="30" class="btn" alt="HOME"></a></li>
 <?php endif; ?>
 <?php if ( strpos( $_SERVER['REQUEST_URI'], '/keywords') !== false ) : ?>
-<li><a href="<?php echo home_url( 'keywords' ); ?>"><img src="/images/common/header_nv02_on.png" width="141" height="30" alt="KEYWORDS"></a></li>
+<li><a href="<?php echo get_category_link( 3 ); ?>"><img src="/images/common/header_nv02_on.png" width="141" height="30" alt="KEYWORDS"></a></li>
 <?php else : ?>
-<li><a href="<?php echo home_url( 'keywords' ); ?>"><img src="/images/common/header_nv02.png" width="141" height="30" class="btn" alt="KEYWORDS"></a></li>
+<li><a href="<?php echo get_category_link( 3 ); ?>"><img src="/images/common/header_nv02.png" width="141" height="30" class="btn" alt="KEYWORDS"></a></li>
 <?php endif; ?>
 <?php if ( strpos( $_SERVER['REQUEST_URI'], '/column') !== false ) : ?>
 <li><a href="<?php echo get_category_link( 2 ); ?>"><img src="/images/common/header_nv03_on.png" width="108" height="30" alt="COLUMN"></a></li>

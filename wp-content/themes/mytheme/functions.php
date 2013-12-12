@@ -33,13 +33,13 @@ add_shortcode( 'home_url', 'shortcode_home_url' );
 
 
 //フィルターで抜粋の長さの変更 
-function new_excerpt_length( $length ) {	
-	return 40;
+function new_excerpt_length( $length ) {
+	return 140;
 }	
 add_filter( 'excerpt_length', 'new_excerpt_length' );
 
 function new_excerpt_mblength( $length ) {
-	return 40;
+	return 140;
 }
 add_filter( 'excerpt_mblength', 'new_excerpt_mblength' );
 
@@ -82,3 +82,31 @@ function catch_that_image() {
 }
 
 
+//記事内の画像IDを取得
+function catch_that_image_id() {
+	global $post, $posts;
+	$first_img = '';
+	ob_start();
+	ob_end_clean();
+	$output = preg_match_all('/<img.+class=[\'"].+wp-image-([0-9]+).*[\'"].*>/i', $post->post_content, $matches);
+	$first_img_id = $matches [1] [0];
+
+	if(empty($first_img_id)){ //Defines a default image
+		$first_img_id = '';
+	}
+
+	return $first_img_id;
+}
+
+
+//子カテゴリー内の投稿かテストする 
+function post_is_in_descendant_category( $cats, $_post = null )
+{
+	foreach ( (array) $cats as $cat ) {
+		// get_term_children() accepts integer ID only
+		$descendants = get_term_children( (int) $cat, 'category');
+		if ( $descendants && in_category( $descendants, $_post ) )
+			return true;
+	}
+	return false;
+}
