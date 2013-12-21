@@ -18,6 +18,18 @@
 <script src="/js/common.js"></script>
 <?php if ( is_home() || is_front_page() ) : ?>
 <script src="/js/bxslider/jquery.bxslider.min.js"></script>
+<?php /*
+<script>
+$(function() {
+	var slider = $('div#slider-body ul').bxSlider({
+		auto: 'true',
+		speed: 500,
+		pause: (5 * 1000),
+		controls: false
+	});
+});
+</script>
+*/ ?>
 <?php endif; ?>
 <!-- BEGIN: WP Social Bookmarking Light -->
 <meta name="mixi-check-robots" content="noimage" />
@@ -31,6 +43,7 @@
 <![endif]-->
 <?php wp_deregister_script( 'jquery' ); ?>
 <?php wp_head(); ?>
+<script type="text/javascript" src="/js/ga.js"></script>
 </head>
 
 <body id="home">

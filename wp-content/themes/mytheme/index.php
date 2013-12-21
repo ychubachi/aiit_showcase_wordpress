@@ -8,6 +8,10 @@
 <div id="slider-body">
 <ul>
 <li><a href="http://aiit.ac.jp/admission/guidance.html" target="_blank"><img src="/images/index/index_ma01.jpg" width="615" height="238" alt=""></a></li>
+<!--
+<li><a href="#"><img src="/images/index/index_ma02.jpg" width="615" height="238" alt=""></a></li>
+<li><a href="#"><img src="/images/index/index_ma02.jpg" width="615" height="238" alt=""></a></li>
+-->
 </ul>
 </div>
 <!-- /slider --></div>
@@ -38,6 +42,7 @@
 		endif;
 ?>
 <div class="multicolumn-right w395">
+<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 <p><?php echo mb_substr( get_the_excerpt(), 0, 140 ); ?>&#046;&#046;&#046;<a href="<?php the_permalink(); ?>">続きを読む</a></p>
 </div>
 </div>
