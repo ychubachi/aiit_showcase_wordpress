@@ -42,6 +42,9 @@
 </div>
 </div>
 </section>
+<ul id="side-banner">
+<li><a href="http://aiit.ac.jp/" target="_blank"><img src="/images/common/side_bn02.jpg" width="258" alt="産業技術大学院大学"></a></li>
+</ul>
 <section id="side-sns" class="boxb">
 <h1><img src="/images/common/side_h01.png" width="95" height="19" alt="Facebook">
 </h1>
