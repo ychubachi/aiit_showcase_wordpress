@@ -13,7 +13,6 @@
 </div>
 <div class="box">
 <div id="keywordscolumn">
-<div id="entrycolumn" class="heightLine">
 
 <?php
 	$the_query = new WP_Query( 'posts_per_page=1&cat=3' );
@@ -38,41 +37,10 @@
 ?>
 
 </div>
-<div id="side-keywords" class="heightLine">
-<aside class="side-list">
-<h2>アーカイブ</h2>
-<ul>
-
-<?php
-	$the_query = new WP_Query( 'cat=3' );
-	while ( $the_query->have_posts() ) : $the_query->the_post();
-?>
-<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-<?php
-	endwhile;
-	wp_reset_postdata();
-?>
-
-</ul>
-</aside>
-<aside class="side-list">
-<h2>カテゴリー</h2>
-<ul>
-
-<?php
-	$cats = get_categories( 'parent=3' );
-	foreach ( $cats as $val ) {
-?>
-<li><a href="<?php echo get_category_link( $val->term_id ); ?>"><?php echo $val->name; ?></a></li>
-<?php
-	}
-?>
-
-</ul>
-</aside>
 </div>
-</div>
-</div>
+</section>
+<section>
+<p class="mt25"><a href="/info"><img src="/images/common/common_bn01.jpg" width="615" height="100" alt="産業技術大学院大学についてのお問い合わせ・資料請求はこちら"></a></p>
 </section>
 <!-- /contentscolumn --></article>
 <!-- /two-maincolumn-main --></div>
