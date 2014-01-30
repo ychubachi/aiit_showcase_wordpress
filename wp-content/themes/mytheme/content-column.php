@@ -6,8 +6,8 @@
 <section id="column" class="boxb">
 <div class="titlecolumn">
 <h1><img src="/images/index/index_h02.png" width="196" height="47" alt="COLUMN"></h1>
-<p>AIIT教授陣が交代で綴る日々のことこそ、<br>
-閃きのヒントかもしれない。教員連載コラム</p>
+<p>閃きのヒントがそこにある。<br>
+教授陣が旬の話題を交代で綴る、連載コラム。</p>
 </div>
 <div class="box">
 <article class="entry-body">

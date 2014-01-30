@@ -6,7 +6,7 @@
 <section id="keywords" class="boxb">
 <div class="titlecolumn">
 <h1><img src="/images/index/index_h01.png" width="262" height="47" alt="KEYWORDS"></h1>
-<p>AIIT教授陣が解説する、情報・産業技術の<br>
+<p>AIIT教授陣が解説する、産業技術の<br>
 オンライン用語辞典。日々更新中。</p>
 </div>
 <div class="box">
