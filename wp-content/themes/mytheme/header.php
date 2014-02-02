@@ -56,7 +56,7 @@ $(function() {
 }(document, 'script', 'facebook-jssdk'));</script>
 <header>
 <div id="headercolumn">
-<p>産業技術大学院大学 [AIIT] の活動と成果をアーカイブ・発信する [AIITショーケース]</p>
+<p>産業技術大学院大学（AIIT）の活動と成果をアーカイブ・発信する</p>
 <h1><img src="/images/common/header_logo01.png" alt="AIITショーケース[産業技術大学院大学]" width="899" height="56" border="0" usemap="#Map"></h1>
 <map name="Map">
 <area shape="rect" coords="0,0,455,56" href="<?php echo home_url(); ?>" alt="AIIT SHOWCASE">
