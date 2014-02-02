@@ -7,7 +7,7 @@
 <div id="slider">
 <div id="slider-body">
 <ul>
-<li><a href="http://aiit.ac.jp/admission/guidance.html" target="_blank"><img src="/images/index/index_ma01.jpg" width="615" height="238" alt="特別講演会・入試説明会"></a></li>
+<!--<li><a href="http://aiit.ac.jp/admission/guidance.html" target="_blank"><img src="/images/index/index_ma01.jpg" width="615" height="238" alt="特別講演会・入試説明会"></a></li>-->
 <li><a href="<?php echo get_category_link( 3 ); ?>"><img src="/images/index/index_ma02.jpg" width="615" height="238" alt="KEYWORDS"></a></li>
 <li><a href="<?php echo get_category_link( 2 ); ?>"><img src="/images/index/index_ma03.jpg" width="615" height="238" alt="COLUMN"></a></li>
 <li><a href="<?php echo get_category_link( 6 ); ?>"><img src="/images/index/index_ma04.jpg" width="615" height="238" alt="CHANNEL"></a></li>
