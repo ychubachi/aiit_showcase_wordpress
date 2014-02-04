@@ -39,7 +39,7 @@ $(function() {
 <![endif]-->
 <?php wp_deregister_script( 'jquery' ); ?>
 <?php wp_head(); ?>
-<script type="text/javascript" src="/js/ga.js"></script>
+<!-- <script type="text/javascript" src="/js/ga.js"></script> -->
 <?php if ( is_home() || is_front_page() ) : ?>
 <?php get_sidebar( 'ad' ); ?>
 <?php endif; ?>
