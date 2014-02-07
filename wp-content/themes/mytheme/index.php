@@ -113,6 +113,7 @@
 </ul>
 </div>
 </section>
+<?php include("banner_inquiry.php"); ?>
 </article>
 <!-- /two-maincolumn-main --></div>
 
