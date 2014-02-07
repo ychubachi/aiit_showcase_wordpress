@@ -67,9 +67,7 @@
 	endif;
 ?>
 
-<section>
-<p class="mt25"><a href="/info"><img src="/images/common/common_bn01.jpg" width="615" height="100" alt="産業技術大学院大学についてのお問い合わせ・資料請求はこちら"></a></p>
-</section>
+<?php include("banner_inquiry.php"); ?>
 <!-- /contentscolumn --></article>
 <!-- /two-maincolumn-main --></div>
 
