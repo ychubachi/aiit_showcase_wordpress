@@ -22,7 +22,7 @@
 <div class="entry-content">
 <p>公開日: <?php the_time( get_option( 'date_format' ) ); ?></p>
 <?php if ( post_custom( 'youtube' ) ) : ?>
-<iframe width="585" height="347" src="//www.youtube.com/embed/<?php echo post_custom( 'youtube' ); ?>" frameborder="0" allowfullscreen></iframe>
+<iframe width="576" height="324" src="//www.youtube.com/embed/<?php echo post_custom( 'youtube' ); ?>" frameborder="0" allowfullscreen></iframe>
 <?php endif; ?>
 <div class="sns-btn">
 <?php if( function_exists( 'wp_social_bookmarking_light_output_e' ) ) wp_social_bookmarking_light_output_e( null, get_permalink(), get_the_title() ); ?>

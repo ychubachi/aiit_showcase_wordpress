@@ -93,12 +93,12 @@
 <li>
 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 <div class="multicolumn w276 mt5">
-<div class="multicolumn-left w120">
+<div class="multicolumn-left w120" style="width:160px;height:90px;overflow:hidden">
 <?php if ( post_custom( 'youtube' ) ) : ?>
-<a href="<?php the_permalink(); ?>"><img src="//i.ytimg.com/vi/<?php echo post_custom( 'youtube' ); ?>/default.jpg" width="120" height="90" alt=""></a>
+<a href="<?php the_permalink(); ?>"><img src="//i.ytimg.com/vi/<?php echo post_custom( 'youtube' ); ?>/default.jpg" width="160" height="120" alt="" style="margin-top:-15px"></a>
 <?php endif; ?>
 </div>
-<div class="multicolumn-right w146">
+<div class="multicolumn-right w146" style="width:106px">
 <p>公開日：<br>
 <?php the_time( get_option( 'date_format' ) ); ?><br>
 <a href="<?php the_permalink(); ?>">詳細はこちら</a></p>
