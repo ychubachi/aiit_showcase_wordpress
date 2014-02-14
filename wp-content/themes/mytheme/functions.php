@@ -110,3 +110,7 @@ function post_is_in_descendant_category( $cats, $_post = null )
 	}
 	return false;
 }
+
+if (function_exists('add_theme_support')) {
+    add_theme_support('post-thumbnails');
+};
