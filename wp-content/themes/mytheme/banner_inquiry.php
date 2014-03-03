@@ -2,8 +2,8 @@
 
 <section>
 <div align="center">
-<a class="doorkeeper-registration-widget" data-width="300" href="http://aiit.doorkeeper.jp/events/9225" target="_blank">産業技術大学院大学（AIIT）入試説明会（2/22開催）</a><script src="http://widgets.doorkeeper.jp/w/widget.js"></script>
-<a class="doorkeeper-registration-widget" data-width="300" href="http://aiit.doorkeeper.jp/events/9226" target="_blank">産業技術大学院大学（AIIT）入試説明会（2/24開催）</a><script src="http://widgets.doorkeeper.jp/w/widget.js"></script>
+<a class="doorkeeper-registration-widget" data-width="300" href="http://aiit.doorkeeper.jp/events/9544" target="_blank">産業技術大学院大学（AIIT）入試説明会（3/5開催）</a><script src="http://widgets.doorkeeper.jp/w/widget.js"></script>
+<a class="doorkeeper-registration-widget" data-width="300" href="http://aiit.doorkeeper.jp/events/9545" target="_blank">産業技術大学院大学（AIIT）入試説明会（3/12開催）</a><script src="http://widgets.doorkeeper.jp/w/widget.js"></script>
 </div>
 </section>
 
