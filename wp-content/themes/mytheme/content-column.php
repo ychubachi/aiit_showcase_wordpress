@@ -17,15 +17,8 @@
 <!-- ▼記事<?php the_ID(); ?> -->
 <h2 class="entry-title"><?php the_title(); ?></h2>
 <div class="entry-post">
-<p><?php
-		if ( post_custom( 'image1' ) ) :
-			$image_1 = wp_get_attachment_image_src( post_custom( 'image1' ), 'thumbnail' );
-?><img src="<?php echo $image_1[0]; ?>" width="40" height="40" alt="" class="vmiddle mr5"><?php
-		endif;
-?><?php echo post_custom( 'text1' ); ?></p>
-</div>
-<div class="sns-btn">
-<?php if( function_exists( 'wp_social_bookmarking_light_output_e' ) ) wp_social_bookmarking_light_output_e( null, get_permalink(), get_the_title() ); ?>
+<p><?php echo get_avatar( get_the_author_id(), 40 ); ?>
+ <?php the_author_meta( 'senko' ); ?> <?php the_author_meta( 'yakusyoku' ); ?> <?php the_author_meta( 'last_name' ); ?><?php the_author_meta( 'first_name' ); ?></p>
 </div>
 <div class="entry-content">
 <?php the_content(); ?>
@@ -35,17 +28,23 @@
 
 </section>
 </article>
+<div class="sns-btn">
+<?php if( function_exists( 'wp_social_bookmarking_light_output_e' ) ) wp_social_bookmarking_light_output_e( null, get_permalink(), get_the_title() ); ?>
+</div>
+
+<?php echo do_shortcode('[fbcomments]'); ?>
+
+<div id="nav-below" class="navigation">
+<span class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">&lt;</span>&nbsp;prev&nbsp;', true ); ?></span>|<span class="nav-next"><?php next_post_link( '%link', '&nbsp;next&nbsp;<span class="meta-nav">&gt;</span>', true ); ?></span>
+<!-- /nav-below --></div>
 </div>
 </section>
 <?php include("banner_inquiry.php"); ?>
 <!-- /contentscolumn --></article>
 <!-- /two-maincolumn-main --></div>
 
-<?php get_sidebar(); ?>
+<?php get_sidebar( 'cat' ); ?>
 
 <!-- /two-maincolumn --></div>
-<div class="ptop">
-<p><a href="#home">▲ページトップに戻る</a></p>
-<!-- /ptop --></div>
 <!-- /maincolumn --></article>
 <!-- /container --></div>

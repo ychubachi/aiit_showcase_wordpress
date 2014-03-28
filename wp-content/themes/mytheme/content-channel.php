@@ -19,9 +19,6 @@
 <?php if ( post_custom( 'youtube' ) ) : ?>
 <iframe width="576" height="324" src="//www.youtube.com/embed/<?php echo post_custom( 'youtube' ); ?>" frameborder="0" allowfullscreen></iframe>
 <?php endif; ?>
-<div class="sns-btn">
-<?php if( function_exists( 'wp_social_bookmarking_light_output_e' ) ) wp_social_bookmarking_light_output_e( null, get_permalink(), get_the_title() ); ?>
-</div>
 <div class="mt15">
 <?php the_content(); ?>
 </div>
@@ -31,17 +28,23 @@
 <!-- ▲記事<?php the_ID(); ?> -->
 <?php endwhile; ?>
 
+<div class="sns-btn">
+<?php if( function_exists( 'wp_social_bookmarking_light_output_e' ) ) wp_social_bookmarking_light_output_e( null, get_permalink(), get_the_title() ); ?>
+</div>
+
+<?php echo do_shortcode('[fbcomments]'); ?>
+
+<div id="nav-below" class="navigation">
+<span class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">&lt;</span>&nbsp;prev&nbsp;', true ); ?></span>|<span class="nav-next"><?php next_post_link( '%link', '&nbsp;next&nbsp;<span class="meta-nav">&gt;</span>', true ); ?></span>
+<!-- /nav-below --></div>
 </div>
 </section>
 <?php include("banner_inquiry.php"); ?>
 <!-- /contentscolumn --></article>
 <!-- /two-maincolumn-main --></div>
 
-<?php get_sidebar(); ?>
+<?php get_sidebar( 'cat' ); ?>
 
 <!-- /two-maincolumn --></div>
-<div class="ptop">
-<p><a href="#home">▲ページトップに戻る</a></p>
-<!-- /ptop --></div>
 <!-- /maincolumn --></article>
 <!-- /container --></div>

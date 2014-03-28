@@ -57,6 +57,9 @@
 <?php endwhile; ?>
 
 </dl>
+<div class="sns-btn">
+<?php if( function_exists( 'wp_social_bookmarking_light_output_e' ) ) wp_social_bookmarking_light_output_e( null, get_permalink(), get_the_title() ); ?>
+</div>
 <div class='wp-pagenavi'>
 <?php if( function_exists( 'wp_pagenavi' ) ) wp_pagenavi(); ?>
 </div>
@@ -74,9 +77,6 @@
 <?php get_sidebar(); ?>
 
 <!-- /two-maincolumn --></div>
-<div class="ptop">
-<p><a href="#home">▲ページトップに戻る</a></p>
-<!-- /ptop --></div>
 <!-- /maincolumn --></article>
 <!-- /container --></div>
 

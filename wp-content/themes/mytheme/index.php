@@ -18,7 +18,7 @@
 <article id="index-contentscolumn">
 <section id="index-keywords" class="boxb">
 <div class="titlecolumn">
-<h1><a href="<?php echo get_category_link( 3 ); ?>"><img src="/images/index/index_h01.png" width="262" height="47" alt="KEYWORDS"></a></h1>
+<h2><a href="<?php echo get_category_link( 3 ); ?>"><img src="/images/index/index_h01.png" width="262" height="47" alt="KEYWORDS"></a></h2>
 <p>AIIT教授陣が解説する、産業技術の<br>
 オンライン用語辞典。日々更新中。</p>
 </div>
@@ -43,7 +43,7 @@
 </section>
 <section id="index-column" class="boxb">
 <div class="titlecolumn">
-<h1><a href="<?php echo get_category_link( 2 ); ?>"><img src="/images/index/index_h02.png" width="196" height="47" alt="COLUMN"></a></h1>
+<h2><a href="<?php echo get_category_link( 2 ); ?>"><img src="/images/index/index_h02.png" width="196" height="47" alt="COLUMN"></a></h2>
 <p>閃きのヒントがそこにある。<br>
 教授陣が旬の話題を交代で綴る、連載コラム。</p>
 </div>
@@ -59,15 +59,8 @@
 <p><?php echo mb_substr( get_the_excerpt(), 0, 120 ); ?>&#046;&#046;&#046;<a href="<?php the_permalink(); ?>">続きを読む</a></p>
 </div>
 <div class="multicolumn-right w150">
-<?php
-		if ( post_custom( 'image1' ) ) :
-			$image_1 = wp_get_attachment_image_src( post_custom( 'image1' ), 'thumbnail' );
-?>
-<p class="center"><img src="<?php echo $image_1[0]; ?>" width="88" height="88" alt=""></p>
-<?php
-		endif;
-?>
-<p><?php echo post_custom( 'text1' ); ?></p>
+<p class="center"><?php echo get_avatar( get_the_author_id(), 88 ); ?></p>
+<p><?php the_author_meta( 'senko' ); ?><br /><?php the_author_meta( 'yakusyoku' ); ?> <?php the_author_meta( 'last_name' ); ?><?php the_author_meta( 'first_name' ); ?></p>
 </div>
 </div>
 <?php
@@ -79,7 +72,7 @@
 </section>
 <section id="index-channel" class="boxb">
 <div class="titlecolumn">
-<h1><a href="<?php echo home_url( 'channel' ); ?>"><img src="/images/index/index_h03.png" width="220" height="47" alt="CHANNEL"></a></h1>
+<h2><a href="<?php echo home_url( 'channel' ); ?>"><img src="/images/index/index_h03.png" width="220" height="47" alt="CHANNEL"></a></h2>
 <p>AIITのリアルを知る。<br>
 動画で観る学びの現場。</p>
 </div>

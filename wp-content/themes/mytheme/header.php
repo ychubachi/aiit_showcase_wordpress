@@ -6,6 +6,7 @@
 <!--[if lt IE 9 ]>
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <![endif]-->
+<meta property="og:locale" content="ja_JP" />
 <title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="stylesheet" href="/css/import.css">
@@ -87,6 +88,11 @@ $(function() {
 <li><a href="<?php echo get_category_link( 6 ); ?>"><img src="/images/common/header_nv04_on.png" width="120" height="30" alt="CHANNEL"></a></li>
 <?php else : ?>
 <li><a href="<?php echo get_category_link( 6 ); ?>"><img src="/images/common/header_nv04.png" width="120" height="30" class="btn" alt="CHANNEL"></a></li>
+<?php endif; ?>
+<?php if ( strpos( $_SERVER['REQUEST_URI'], '/about') !== false ) : ?>
+<li><a href="<?php echo home_url( 'about' ); ?>"><img src="/images/common/header_nv05_on.png" width="93" height="30" alt="ABOUT"></a></li>
+<?php else : ?>
+<li><a href="<?php echo home_url( 'about' ); ?>"><img src="/images/common/header_nv05.png" width="93" height="30" class="btn" alt="ABOUT"></a></li>
 <?php endif; ?>
 </ul>
 </nav>
