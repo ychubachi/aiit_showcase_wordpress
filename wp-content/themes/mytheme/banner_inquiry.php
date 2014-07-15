@@ -2,7 +2,7 @@
 
 <section>
 <div align="center">
-<a class="doorkeeper-registration-widget" data-width="615" href="http://aiit.doorkeeper.jp/events/12103">講演会「ITサービスマネジメントの最新状況」6/14(土)14:45～</a><script src="http://widgets.doorkeeper.jp/w/widget.js"></script>
+<a class="doorkeeper-registration-widget" data-width="615" href="http://aiit.doorkeeper.jp/events/12692">3Dプリンターが起こす新しい設計と開発体制の変化</a><script src="http://widgets.doorkeeper.jp/w/widget.js"></script>
 </div>
 </section>
 
