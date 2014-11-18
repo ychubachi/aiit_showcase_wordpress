@@ -18,7 +18,9 @@
 <!-- /menu-title --></div>
 <div class="menu-list">
 <ul>
+<!--
 <li><a href="<?php echo get_category_link( 1 ); ?>">新着情報</a></li>
+-->
 <li><a href="<?php echo get_category_link( 3 ); ?>">KEYWORDS</a></li>
 <li><a href="<?php echo get_category_link( 2 ); ?>">COLUMN</a></li>
 <li><a href="<?php echo get_category_link( 6 ); ?>">CHANNEL</a></li>
@@ -27,6 +29,7 @@
 </ul>
 </div>
 <!-- /index-menu --></div>
+<!--
 <section id="index-news">
 <div class="titlecolumn">
 <h2><a href="<?php echo get_category_link( 1 ); ?>"><img src="/sp/images/index/index_h04.png" height="25" alt="新着情報"></a></h2>
@@ -35,21 +38,22 @@
 <ul>
 
 <?php
-	$the_query = new WP_Query( 'posts_per_page=5&cat=1' );
-	while ( $the_query->have_posts() ) : $the_query->the_post();
+    $the_query = new WP_Query( 'posts_per_page=5&cat=1' );
+    while ( $the_query->have_posts() ) : $the_query->the_post();
 ?>
 <li><a href="<?php the_permalink(); ?>">
 <h3><?php the_time( get_option( 'date_format' ) ); ?></h3>
 <p class="post"><?php the_title(); ?></p>
 </a></li>
 <?php
-	endwhile;
-	wp_reset_postdata();
+    endwhile;
+    wp_reset_postdata();
 ?>
 
 </ul>
 </div>
 </section>
+-->
 <section id="index-keywords">
 <div class="titlecolumn">
 <h2><a href="<?php echo get_category_link( 3 ); ?>"><img src="/sp/images/index/index_h01.png" height="25" alt="KEYWORDS"></a></h2>
@@ -58,16 +62,16 @@
 <ul>
 
 <?php
-	$the_query = new WP_Query( 'posts_per_page=2&cat=3' );
-	while ( $the_query->have_posts() ) : $the_query->the_post();
+    $the_query = new WP_Query( 'posts_per_page=2&cat=3' );
+    while ( $the_query->have_posts() ) : $the_query->the_post();
 ?>
 <li><a href="<?php the_permalink(); ?>">
 <h3><?php the_title(); ?></h3>
 <p class="post"><?php echo mb_substr( get_the_excerpt(), 0, 80 ); ?><span>...続きを読む</span></p>
 </a></li>
 <?php
-	endwhile;
-	wp_reset_postdata();
+    endwhile;
+    wp_reset_postdata();
 ?>
 
 </ul>
@@ -81,8 +85,8 @@
 <ul>
 
 <?php
-	$the_query = new WP_Query( 'posts_per_page=2&cat=2' );
-	while ( $the_query->have_posts() ) : $the_query->the_post();
+    $the_query = new WP_Query( 'posts_per_page=2&cat=2' );
+    while ( $the_query->have_posts() ) : $the_query->the_post();
 ?>
 <li><a href="<?php the_permalink(); ?>">
 <div>
@@ -93,8 +97,8 @@
 </div>
 </a></li>
 <?php
-	endwhile;
-	wp_reset_postdata();
+    endwhile;
+    wp_reset_postdata();
 ?>
 
 </ul>
@@ -108,8 +112,8 @@
 <ul>
 
 <?php
-	$the_query = new WP_Query( 'posts_per_page=2&cat=6' );
-	while ( $the_query->have_posts() ) : $the_query->the_post();
+    $the_query = new WP_Query( 'posts_per_page=2&cat=6' );
+    while ( $the_query->have_posts() ) : $the_query->the_post();
 ?>
 <li><a href="<?php the_permalink(); ?>">
 <h3><?php the_title(); ?></h3>
@@ -120,8 +124,8 @@
 </div>
 </a></li>
 <?php
-	endwhile;
-	wp_reset_postdata();
+    endwhile;
+    wp_reset_postdata();
 ?>
 
 </ul>
