@@ -1,27 +1,4 @@
 <div id="two-maincolumn-side" class="fright">
-<section id="side-news" class="boxb">
-<h1><img src="/images/common/side_h02.png" width="80" height="19" alt="新着情報">
-</h1>
-<p><a href="<?php echo get_category_link( 1 ); ?>">一覧を見る</a></p>
-<div class="box">
-<div id="news-box">
-<dl>
-
-<?php
-	$the_query = new WP_Query( 'posts_per_page=5&cat=1' );
-	while ( $the_query->have_posts() ) : $the_query->the_post();
-?>
-<dt><?php the_time( get_option( 'date_format' ) ); ?></dt>
-<dd><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></dd>
-<?php
-	endwhile;
-	wp_reset_postdata();
-?>
-
-</dl>
-</div>
-</div>
-</section>
 <ul id="side-banner">
 <li><a href="http://aiit.ac.jp/" target="_blank"><img src="/images/common/side_bn02.jpg" width="258" alt="産業技術大学院"></a></li>
 </ul>
@@ -31,19 +8,19 @@
 <section id="side-tag">
 <script>
 $(function() {
-	$('#side-tag .tag-list').hide();
-	$('#side-tag .tag-title').removeClass('open');
+    $('#side-tag .tag-list').hide();
+    $('#side-tag .tag-title').removeClass('open');
 
-	$('#side-tag .tag-title').click(function(){
-		$(this).next('#side-tag .tag-list').toggle();
-		$(this).toggleClass('open');
-	});
+    $('#side-tag .tag-title').click(function(){
+        $(this).next('#side-tag .tag-list').toggle();
+        $(this).toggleClass('open');
+    });
 });
 </script>
 
 <?php
-	$tags = get_terms( 'post_tag', 'orderby=id' );
-	foreach ( $tags as $tag ) :
+    $tags = get_terms( 'post_tag', 'orderby=id' );
+    foreach ( $tags as $tag ) :
 ?>
 <div class="tag">
 <div class="tag-title">
@@ -52,9 +29,9 @@ $(function() {
 <div class="tag-list">
 <ul>
 <?php
-		$the_query = new WP_Query( array( 'tag_id' => $tag->term_id ) );
-		while ( $the_query->have_posts() ) : $the_query->the_post();
-			if ( in_category( 6 ) ) :
+        $the_query = new WP_Query( array( 'tag_id' => $tag->term_id ) );
+        while ( $the_query->have_posts() ) : $the_query->the_post();
+            if ( in_category( 6 ) ) :
 ?>
 <li>
 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
@@ -72,24 +49,24 @@ $(function() {
 </div>
 </li>
 <?php
-			elseif ( in_category( 2 ) ) :
+            elseif ( in_category( 2 ) ) :
 ?>
 <li><h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 <p class="post"><?php the_author_meta( 'senko' ); ?> <?php the_author_meta( 'yakusyoku' ); ?> <?php the_author_meta( 'last_name' ); ?><?php the_author_meta( 'first_name' ); ?></p></li>
 <?php
-			else :
+            else :
 ?>
 <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 <?php
-			endif;
-		endwhile;
-		wp_reset_postdata();
+            endif;
+        endwhile;
+        wp_reset_postdata();
 ?>
 </ul>
 </div>
 </div>
 <?php
-	endforeach;
+    endforeach;
 ?>
 
 </section>
@@ -102,13 +79,13 @@ $(function() {
 <ul>
 
 <?php
-	$the_query = new WP_Query( 'posts_per_page=1000&cat=1' );
-	while ( $the_query->have_posts() ) : $the_query->the_post();
+    $the_query = new WP_Query( 'posts_per_page=1000&cat=1' );
+    while ( $the_query->have_posts() ) : $the_query->the_post();
 ?>
 <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 <?php
-	endwhile;
-	wp_reset_postdata();
+    endwhile;
+    wp_reset_postdata();
 ?>
 
 </ul>
